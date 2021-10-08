@@ -1,0 +1,12 @@
+<!-- <p>product works!</p> -->
+<app-header></app-header>
+
+<div [innerText]="productName" [hidden]="visible"></div>
+
+<button (click)="onToggle()">Toggle</button>
+<!-- <pre>{{products|json}}</pre> -->
+<!-- <button (click)="toggleTable()">Toggle Table</button> -->
+<button (click)="loadProducts()">Load Products</button>
+<button (click)="addProduct()">Add Product</button>
+<app-product-list (productSelect)="onProductSelect($event)" [productList]="products"></app-product-list>
+<!-- <app-orders>Hello</app-orders> -->
